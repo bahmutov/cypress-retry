@@ -1,12 +1,15 @@
 {
   "name": "cypress-retry",
   "version": "1.0.0",
-  "description": "",
+  "description": "Retry just the failed Cypress tests using Cypress module API and AST rewriting",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "cypress",
+    "cypress-io"
+  ],
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com> (https://glebbahmutov.com/)",
   "license": "ISC",
   "devDependencies": {
@@ -14,6 +17,7 @@
     "prettier": "1.15.3"
   },
   "dependencies": {
+    "debug": "4.1.0",
     "falafel": "2.1.0",
     "ramda": "0.26.1"
   }
