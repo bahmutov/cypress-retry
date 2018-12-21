@@ -41,7 +41,10 @@ const skipAllTests = (node) => {
   if (isIt(node)) {
     const names = [getItsName(node)]
     findSuites(node, names)
-    console.log('found', names)
+
+    // we were searching from inside out, thus need to revert the names
+    const testName = names.reverse()
+    console.log('found test', testName)
   }
 }
 const output = falafel(source, skipAllTests)
