@@ -15,4 +15,8 @@ describe('outside', () => {
       }
     })
   })
+
+  it('works from single describe', () => {})
 })
+
+it('exists by itself', () => {})

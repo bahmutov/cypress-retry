@@ -60,7 +60,8 @@ const skipAllOtherTests = (specFilename, leaveTests) => {
     }
   }
   const output = falafel(source, skipAllTests)
-  console.log(output)
+  // console.log(output)
+  fs.writeFileSync(specFilename, output, 'utf8')
 }
 
 module.exports = {
